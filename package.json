@@ -1,0 +1,20 @@
+{
+  "name": "sim-market",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Single simulated market order book with SQLite event ledger",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "test": "tsc -p tsconfig.json && node --test --test-force-exit dist/test/"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
